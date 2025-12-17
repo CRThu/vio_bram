@@ -4,6 +4,7 @@
     Write-Host "2. 下载比特流"
     Write-Host "3. coe文件转换csv"
     Write-Host "4. 在线更新bram"
+    Write-Host "5. 在线回读bram"
     Write-Host "--------------------------"
 }
 
@@ -25,6 +26,10 @@ function Update-Bram {
     vivado -mode batch -source script\vio.bram.w.batch.tcl
 }
 
+function ReadBack-Bram {
+    vivado -mode batch -source script\vio.bram.r.batch.tcl
+}
+
 while($true) {
     Show-MainMenu
     $choice = Read-Host "请选择功能"
@@ -33,6 +38,7 @@ while($true) {
         '2' { Prog-Bits }
         '3' { Convert-Coe }
         '4' { Update-Bram }
+        '5' { ReadBack-Bram }
         default { Write-Host "无效选项" -ForegroundColor Red }
     }
 }

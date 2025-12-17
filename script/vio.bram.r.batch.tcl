@@ -1,0 +1,5 @@
+source "./script/open_prj.tcl"
+source "./script/open_hw.tcl"
+source "./script/vio.bram.r.tcl"
+source "./script/close_hw.tcl"
+source "./script/close_prj.tcl"
