@@ -1,0 +1,1 @@
+open_project [lindex [glob ./*.xpr] 0]
