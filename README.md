@@ -33,8 +33,8 @@ Tcl修改:
 或者在 Vivado Tcl Console 中直接执行：  
 
 ```Tcl
-source ./script/vio.bram.w.tcl  ; # 写入数据
-source ./script/vio.bram.r.tcl  ; # 回读数据
+source ./script/vio.bram.w.tcl   # 写入数据
+source ./script/vio.bram.r.tcl   # 回读数据
 ```
 
 
